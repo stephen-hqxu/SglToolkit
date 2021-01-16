@@ -1,0 +1,5 @@
+#Ignore compiled stuff
+x64/
+
+#Ignore visual studio cache
+.vs/ 
