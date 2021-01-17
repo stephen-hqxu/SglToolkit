@@ -163,7 +163,7 @@
     <ClCompile Include="SgTShadowBox.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="define_file.h" />
+    <ClInclude Include="SgTDefineFile.h" />
     <ClInclude Include="SgTCamera\SgTCamera.h" />
     <ClInclude Include="SgTCamera\SgTSpectatorCamera.h" />
     <ClInclude Include="SgTShaderProc.h" />

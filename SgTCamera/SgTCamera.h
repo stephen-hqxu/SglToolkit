@@ -2,7 +2,7 @@
 #ifndef _SgTCamera_H_
 #define _SgTCamera_H_
 
-#include "../define_file.h"
+#include "../SgTDefineFile.h"
 
 /**
  * @brief Simple OpenGL Toolkit

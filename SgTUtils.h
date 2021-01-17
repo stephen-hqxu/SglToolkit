@@ -2,7 +2,7 @@
 #ifndef _SgTUtils_H_
 #define _SgTUtils_H_
 
-#include "define_file.h"
+#include "SgTDefineFile.h"
 #include <iostream>
 
 /**
