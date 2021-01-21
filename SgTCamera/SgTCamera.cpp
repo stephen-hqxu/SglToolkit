@@ -30,3 +30,27 @@ SgTCamera::~SgTCamera() {
 const SgTmat4 SgTCamera::getViewMat() {
 	return glm::lookAt(this->Position, this->Position + this->Front, this->Up);
 }
+
+const SgTvec3 SgTCamera::getFront() const {
+	return this->Front;
+}
+
+const SgTvec3 SgTCamera::getUp() const {
+	return this->Up;
+}
+
+const SgTvec3 SgTCamera::getPosition() const {
+	return this->Position;
+}
+
+const float SgTCamera::getYaw() const {
+	return this->Yaw;
+}
+
+const float SgTCamera::getPitch() const {
+	return this->Pitch;
+}
+
+const float SgTCamera::getZoomDeg() const {
+	return this->Zoom;
+}

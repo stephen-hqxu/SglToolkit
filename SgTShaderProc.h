@@ -93,48 +93,36 @@ namespace SglToolkit {
 		Get the programe ID
 		@return the ID of the programe
 		*/
-		const int getP() {
-			return this->shaderHandle[0];
-		}
+		const int getP() const;
 
 		/*
 		Get the vertex shader ID
 		@return the ID of the vertex shader
 		*/
-		const int getVS() {
-			return this->shaderHandle[1];
-		}
+		const int getVS() const;
 
 		/*
 		Get the tessellation control shader ID
 		@return the ID of the tessellation control shader
 		*/
-		const int getTCS() {
-			return this->shaderHandle[2];
-		}
+		const int getTCS() const;
 
 		/*
 		Get the tessellation evaluation shader ID
 		@return the ID of the tessellation evaluation shader
 		*/
-		const int getTES() {
-			return this->shaderHandle[3];
-		}
+		const int getTES() const;
 
 		/*
 		Get the geometry shader ID
 		@return the ID of the geometry shader*/
-		const int getGS() {
-			return this->shaderHandle[4];
-		}
+		const int getGS() const;
 
 		/*
 		Get the fragment shader ID
 		@return the ID of the fragment shader
 		*/
-		const int getFS() {
-			return this->shaderHandle[5];
-		}
+		const int getFS() const;
 
 	};
 }

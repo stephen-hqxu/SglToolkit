@@ -142,3 +142,27 @@ const bool SgTShaderProc::debugCompile(GLuint shader, bool isShader, GLchar*& lo
 
 	return true;
 }
+
+const int SgTShaderProc::getP() const {
+	return this->shaderHandle[0];
+}
+
+const int SgTShaderProc::getVS() const {
+	return this->shaderHandle[1];
+}
+
+const int SgTShaderProc::getTCS() const {
+	return this->shaderHandle[2];
+}
+
+const int SgTShaderProc::getTES() const {
+	return this->shaderHandle[3];
+}
+
+const int SgTShaderProc::getGS() const {
+	return this->shaderHandle[4];
+}
+
+const int SgTShaderProc::getFS() const {
+	return this->shaderHandle[5];
+}

@@ -105,48 +105,37 @@ namespace SglToolkit {
 		 * @brief Get the current camera front vector
 		 * @return Camera front
 		*/
-		inline const SgTvec3 getFront() {
-			return this->Front;
-		}
+		const SgTvec3 getFront() const;
 
 		/**
 		 * @brief Get the current camera up vector
 		 * @return camera up
 		*/
-		inline const SgTvec3 getUp() {
-			return this->Up;
-		}
+		const SgTvec3 getUp() const;
+
 		/**
 		 * @brief Get the current camera position vector
 		 * @return camera position
 		*/
-		inline const SgTvec3 getPosition() {
-			return this->Position;
-		}
+		const SgTvec3 getPosition() const;
 
 		/**
 		 * @brief Get the current camera yaw in degree
 		 * @return Camera yaw in degree
 		*/
-		inline const float getYaw() {
-			return this->Yaw;
-		}
+		const float getYaw() const;
 
 		/**
 		 * @brief Get the current camera pitch in degree
 		 * @return Camera pitch in degree
 		*/
-		inline const float getPitch() {
-			return this->Pitch;
-		}
+		const float getPitch() const;
 
 		/**
 		 * @brief Get the current camera zooming level, in degree
 		 * @return camera zoom
 		*/
-		inline const float getZoomDeg() {
-			return this->Zoom;
-		}
+		const float getZoomDeg() const;
 
 	};
 }
