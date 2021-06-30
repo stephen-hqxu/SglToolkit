@@ -44,7 +44,7 @@ void SgTShaderProc::addShader(const GLenum type, const SgTstring path) {
 	//Finished
 }
 
-SgTShaderStatus SgTShaderProc::linkShader(GLchar*& log, const int bufferSize, SgTProgramPara arg) {
+SgTShaderStatus SgTShaderProc::linkShader(GLchar* log, const int bufferSize, SgTProgramPara arg) {
 	if (this->shaderHandle[0] == 0) {//check if we have a programe
 		//create the programe
 		this->shaderHandle[0] = glCreateProgram();
@@ -121,7 +121,7 @@ const SgTstring SgTShaderProc::readCode(const SgTstring Path) {
 	return code;
 }
 
-const bool SgTShaderProc::debugCompile(GLuint shader, bool isShader, GLchar*& log, const int bufferSize) {
+const bool SgTShaderProc::debugCompile(GLuint shader, bool isShader, GLchar* log, const int bufferSize) {
 	//variables
 	GLint success;
 

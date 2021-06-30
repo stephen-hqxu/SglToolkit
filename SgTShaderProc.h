@@ -31,11 +31,11 @@ namespace SglToolkit {
 		If the "isShader" is true, function will check the shader compiler or otherwise program linkage.
 		@param GLuint shader - The shader that needs to be checked
 		@param bool isShader - if the checked item is a shader or programe
-		@param GLchar*& log - a reference that stores log if compile is not successful. Needs to be allocated space.
+		@param GLchar log - a pointer that stores log if compile is not successful. Needs to be allocated space.
 		 * @param bufferSize The size of the buffer that is allocated for the log
 		@return True if compiler does not return any error
 		*/
-		const bool debugCompile(GLuint, bool, GLchar*&, const int);
+		const bool debugCompile(GLuint, bool, GLchar*, const int);
 
 	public:
 
@@ -70,12 +70,12 @@ namespace SglToolkit {
 
 		/**
 		 * @brief Compile all shaders that have been set and link to the programe
-		 * @param GLchar*& log - The error log if error occurs
+		 * @param GLchar log - The error log if error occurs
 		 * @param bufferSize The size of the buffer that is allocated for the log
 		 * @param arg The argument for the program before the program is linked, supplied with a callback function
 		 * @return The status of compilation and linkage
 		*/
-		SgTShaderStatus linkShader(GLchar*&, const int, SgTProgramPara = NULL);
+		SgTShaderStatus linkShader(GLchar*, const int, SgTProgramPara = NULL);
 
 		/**
 		 * @brief Delete the current program and all linked shader, after which the ShaderProc will be reset and can be reused
