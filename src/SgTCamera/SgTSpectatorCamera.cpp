@@ -1,4 +1,4 @@
-#include "SgTSpectatorCamera.h"
+#include "SgTCamera/SgTSpectatorCamera.h"
 
 using namespace SglToolkit;
 

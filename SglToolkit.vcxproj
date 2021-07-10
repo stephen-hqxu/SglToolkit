@@ -18,6 +18,20 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\SgTCamera\SgTCamera.h" />
+    <ClInclude Include="include\SgTCamera\SgTSpectatorCamera.h" />
+    <ClInclude Include="include\SgTDefineFile.h" />
+    <ClInclude Include="include\SgTShaderProc.h" />
+    <ClInclude Include="include\SgTShadowBox.h" />
+    <ClInclude Include="include\SgTUtils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\SgTCamera\SgTCamera.cpp" />
+    <ClCompile Include="src\SgTCamera\SgTSpectatorCamera.cpp" />
+    <ClCompile Include="src\SgTShaderProc.cpp" />
+    <ClCompile Include="src\SgTShadowBox.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -82,12 +96,12 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\steph\source\repos\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\steph\source\repos\include;./include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Users\steph\source\repos\libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\Users\steph\source\repos\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\steph\source\repos\include;./include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Users\steph\source\repos\libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -156,20 +170,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="SgTCamera\SgTCamera.cpp" />
-    <ClCompile Include="SgTCamera\SgTSpectatorCamera.cpp" />
-    <ClCompile Include="SgTShaderProc.cpp" />
-    <ClCompile Include="SgTShadowBox.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="SgTDefineFile.h" />
-    <ClInclude Include="SgTCamera\SgTCamera.h" />
-    <ClInclude Include="SgTCamera\SgTSpectatorCamera.h" />
-    <ClInclude Include="SgTShaderProc.h" />
-    <ClInclude Include="SgTShadowBox.h" />
-    <ClInclude Include="SgTUtils.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
