@@ -14,6 +14,10 @@
 //OpenGL engine
 #include "glad/glad.h"
 
+//CMake config
+#define SglToolkit_VERSION_MAJOR @SglToolkit_VERSION_MAJOR@
+#define SglToolkit_VERSION_MINOR @SglToolkit_VERSION_MINOR@
+
 /**
  * @brief Simple OpenGL Toolkit
 */

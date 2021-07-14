@@ -1,5 +1,7 @@
-#Ignore compiled stuff
-x64/
+#Ignore compiled
+build/
+out/
 
 #Ignore visual studio cache
 .vs/ 
+CMakeSettings.json
